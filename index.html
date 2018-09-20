@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Web Wav Recorder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Web Wav Recorder Component</h1>
+    <p>
+        Web based audio recording component allowing users to record and download .wav files at 16/44.1.
+    </p>
+    <div id="formats">Start recording to capture audio and see the sample rate.</div>
+    <div id="controls">
+  	 <button id="recordButton">Record</button>
+  	 <button id="pauseButton" disabled>Pause</button>
+  	 <button id="stopButton" disabled>Stop</button>
+    </div>
+  	<h3>Recordings</h3>
+  	<ol id="recordingsList"></ol>
+
+    <!-- insert mattdiamond script -->
+  	<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <!-- custom js -->
+  	<script src="js/app.js"></script>
+
+  </body>
+</html>
